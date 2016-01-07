@@ -29,9 +29,9 @@
     "url": "https://github.com/bouzuya/cars-counter-qiita-items"
   },
   "scripts": {
-    "build": "tsc && babel --presets es2015 --out-dir lib/ tmp/",
+    "build": "npm run tsd && tsc && babel --presets es2015 --out-dir lib/ tmp/",
     "clean": "rm -rf lib/ tmp/",
-    "postinstall": "tsd reinstall",
-    "start": "npm run clean && npm run build && node examples/index.js"
+    "start": "npm run clean && npm run build && node examples/index.js",
+    "tsd": "tsd reinstall"
   }
 }
