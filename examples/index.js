@@ -1,4 +1,4 @@
-var counter = require('../lib/').default;
+var counter = require('../');
 
 counter(function(error, counts) {
   if (error) {
