@@ -1,5 +1,5 @@
 import * as url from 'url';
-import moment from './moment';
+import moment from 'moment';
 import fetch from 'node-fetch';
 
 function buildUrl(page) {
